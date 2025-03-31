@@ -2,6 +2,19 @@
 
 ### [Unreleased](https://github.com/MakeShiftArtist/ifunny-api-types/compare/1.0.4...HEAD) - 
 
+#### Chores And Housekeeping
+
+- chore(config): :wrench: Add eslint and prettier support @MakeShiftArtist [`805746f`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/805746f3d6acaf6e6e981128a56ddd6e0409bcea)
+- chore: :memo: Change changelog-template.hbs format @MakeShiftArtist [`f1b8cdd`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/f1b8cdd94a5c5b65897fe31af1def727a6703715)
+
+#### Documentation Changes
+
+- docs: :memo: Update CHANGELOG.md @MakeShiftArtist [`19d5696`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/19d569628826fdda670042da8f76fbf62c529534)
+
+#### Refactoring and Updates
+
+- refactor(eslint): :rotating_light: Fix lint errors @MakeShiftArtist [`f11d2bd`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/f11d2bd1e0eaef39aca909100fee0bdd25dff722)
+
 #### General Changes
 
 - Update CHANGELOG.md @MakeShiftArtist [`85b74cf`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/85b74cf0b676e924a6054b2b18834b3c1fbec185)
