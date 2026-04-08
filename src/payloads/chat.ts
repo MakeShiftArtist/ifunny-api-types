@@ -1,14 +1,6 @@
 import { APIBasePayload } from "./base";
 
 /**
- * Represents a paginated API response with cursor-based pagination
- */
-export interface APIPaginatedResponse<T> extends APIBasePayload {
-    data: T[];
-    cursor?: string;
-}
-
-/**
  * Type of chat channel
  */
 export type ChannelType = "DM" | "Private" | "Public";
