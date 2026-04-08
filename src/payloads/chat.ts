@@ -59,3 +59,26 @@ export interface APIGetMessagesResponse {
     messages: APIChatMessage[];
     cursor?: string;
 }
+
+/**
+ * Payload for inviting users to a chat channel (invite.invite RPC)
+ */
+export interface APIInvitePayload {
+    chat_name: string;
+    users: string[];
+}
+
+/**
+ * Payload for responding to a chat invite (invite.accept or invite.decline RPC)
+ */
+export interface APIInviteResponsePayload {
+    chat_name: string;
+}
+
+/**
+ * Payload for kicking a user from a channel (kick_member RPC)
+ */
+export interface APIKickPayload {
+    chat_name: string;
+    user_id: string;
+}
