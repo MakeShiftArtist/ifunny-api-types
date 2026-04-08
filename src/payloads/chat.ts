@@ -50,3 +50,38 @@ export interface APIChatMessage extends APIBasePayload {
         lastSeenAt?: number;
     };
 }
+
+/**
+ * Pagination cursor information
+ */
+export interface APIPaging {
+    cursors?: {
+        next?: string;
+        prev?: string;
+    };
+    hasNext?: boolean;
+    hasPrev?: boolean;
+}
+
+/**
+ * Paginated collection of chat channels
+ */
+export interface APIChannelPage {
+    items: APIChatChannel[];
+    paging?: APIPaging;
+}
+
+/**
+ * API response wrapper for channels endpoint
+ */
+export interface APIChannelsResponse {
+    channels: APIChannelPage;
+}
+
+/**
+ * Response from get_messages WAMP RPC call
+ */
+export interface APIGetMessagesResponse {
+    messages: APIChatMessage[];
+    cursor?: string;
+}
