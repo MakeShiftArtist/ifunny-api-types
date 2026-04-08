@@ -1,3 +1,4 @@
+import { RESTAPIItems } from "../utils";
 import { APIBasePayload } from "./base";
 
 /**
@@ -43,31 +44,12 @@ export interface APIChatMessage extends APIBasePayload {
     };
 }
 
-/**
- * Pagination cursor information
- */
-export interface APIPaging {
-    cursors?: {
-        next?: string;
-        prev?: string;
-    };
-    hasNext?: boolean;
-    hasPrev?: boolean;
-}
-
-/**
- * Paginated collection of chat channels
- */
-export interface APIChannelPage {
-    items: APIChatChannel[];
-    paging?: APIPaging;
-}
 
 /**
  * API response wrapper for channels endpoint
  */
 export interface APIChannelsResponse {
-    channels: APIChannelPage;
+    channels: RESTAPIItems<APIChatChannel>;
 }
 
 /**
