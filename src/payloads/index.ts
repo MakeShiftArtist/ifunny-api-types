@@ -8,4 +8,5 @@ export * from "./client";
 export * from "./comment";
 export * from "./content";
 export * from "./strike";
+export * from "./topics";
 export * from "./user";
