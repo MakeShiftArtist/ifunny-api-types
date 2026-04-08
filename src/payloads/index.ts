@@ -3,6 +3,7 @@ export * from "./app";
 export * from "./appeal";
 export * from "./ban";
 export * from "./base";
+export * from "./chat";
 export * from "./client";
 export * from "./comment";
 export * from "./content";
