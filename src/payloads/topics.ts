@@ -49,7 +49,7 @@ export function userJoinedChats(userId: string): Topic {
  */
 export function inviteUsers(channelName: string, userIds: string[]): RpcCall<APIInvitePayload> {
 	return {
-		procedure: "invite.invite",
+		procedure: `${CHAT_NAMESPACE}.invite.invite`,
 		kwargs: { chat_name: channelName, users: userIds },
 	};
 }
@@ -59,7 +59,7 @@ export function inviteUsers(channelName: string, userIds: string[]): RpcCall<API
  */
 export function acceptInvite(channelName: string): RpcCall<APIInviteResponsePayload> {
 	return {
-		procedure: "invite.accept",
+		procedure: `${CHAT_NAMESPACE}.invite.accept`,
 		kwargs: { chat_name: channelName },
 	};
 }
@@ -69,7 +69,7 @@ export function acceptInvite(channelName: string): RpcCall<APIInviteResponsePayl
  */
 export function declineInvite(channelName: string): RpcCall<APIInviteResponsePayload> {
 	return {
-		procedure: "invite.decline",
+		procedure: `${CHAT_NAMESPACE}.invite.decline`,
 		kwargs: { chat_name: channelName },
 	};
 }
@@ -79,7 +79,7 @@ export function declineInvite(channelName: string): RpcCall<APIInviteResponsePay
  */
 export function kickMember(channelName: string, userId: string): RpcCall<APIKickPayload> {
 	return {
-		procedure: "kick_member",
+		procedure: `${CHAT_NAMESPACE}.kick_member`,
 		kwargs: { chat_name: channelName, user_id: userId },
 	};
 }
