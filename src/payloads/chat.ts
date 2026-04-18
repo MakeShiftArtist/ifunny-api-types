@@ -57,7 +57,8 @@ export interface APIChannelsResponse {
  */
 export interface APIGetMessagesResponse {
     messages: APIChatMessage[];
-    cursor?: string;
+    prev: number;
+    next: number;
 }
 
 /**
