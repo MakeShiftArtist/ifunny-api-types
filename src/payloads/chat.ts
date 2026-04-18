@@ -62,6 +62,13 @@ export interface APIGetMessagesResponse {
 }
 
 /**
+ * Response from get_chat, get_or_create_chat, and new_chat WAMP RPC calls
+ */
+export interface APIGetChatResponse {
+    chat: APIChatChannel;
+}
+
+/**
  * Payload for inviting users to a chat channel (invite.invite RPC)
  */
 export interface APIInvitePayload {
