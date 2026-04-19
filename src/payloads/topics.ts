@@ -1,3 +1,4 @@
+import { JSONValue } from "../utils";
 import type { APIInvitePayload, APIKickPayload, APIInviteResponsePayload } from "./chat";
 
 export const CHAT_NAMESPACE = "co.fun.chat";
@@ -12,7 +13,7 @@ export interface Topic {
 /**
  * Represents a WAMP RPC call with typed payload
  */
-export interface RpcCall<T = Record<string, any>> {
+export interface RpcCall<T = Record<string, JSONValue>> {
 	procedure: string;
 	kwargs: T;
 }
