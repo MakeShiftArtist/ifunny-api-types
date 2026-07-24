@@ -38,7 +38,7 @@
 		"@eslint/js": "^9.23.0",
 		"@types/node": "22.13.14",
 		"auto-changelog": "2.5.0",
-		"eslint": "^9.23.0",
+		"eslint": "^10.7.0",
 		"globals": "^16.0.0",
 		"prettier": "^3.5.3",
 		"typescript": "5.8.2",
