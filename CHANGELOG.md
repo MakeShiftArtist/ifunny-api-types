@@ -1,6 +1,40 @@
 ## Changelog
 
-### [Unreleased](https://github.com/MakeShiftArtist/ifunny-api-types/compare/v1.1.1...HEAD) - 
+### [v1.2.0](https://github.com/MakeShiftArtist/ifunny-api-types/compare/v1.1.2...v1.2.0) - 18 April 2026
+
+#### New Features
+
+- feat(types): add chat API types (APIChatChannel, APIChatMessage, APIPaginatedResponse, ChannelType) @Eva Harris [`950c757`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/950c757)
+- feat(topics): add WAMP topic composition functions for chat subscriptions @Eva Harris [`954d33e`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/954d33e)
+- feat(types): add pagination and message list response types @Eva Harris [`7bfa768`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/7bfa768)
+- feat(types): add invite/kick RPC payload types and composition functions @Eva Harris [`d3ebc29`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/d3ebc29)
+
+#### Fixes
+
+- fix chat paging @Eva Harris [`b30c781`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/b30c781)
+- fix chat proc ns @Eva Harris [`751c694`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/751c694)
+- fix(chat): match wire format — snake_case fields, integer type enums @Eva Harris [`777fc23`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/777fc23)
+
+#### Refactoring and Updates
+
+- refactor(types): remove dead APIPaginatedResponse type @Eva Harris [`1ceddc6`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/1ceddc6)
+- use generic pagers @Eva Harris [`f264a6c`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/f264a6c)
+
+#### Chores And Housekeeping
+
+- ci(test): :construction_worker: Drop node 12 support @MakeShiftArtist [`ff7f698`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/ff7f698)
+- Chore(deps-dev): Bump js-yaml from 4.1.0 to 4.1.1 @dependabot[bot] [`f325ee1`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/f325ee1)
+- Chore(deps): Bump minimatch @dependabot[bot] [`26a8993`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/26a8993)
+- Chore(deps-dev): Bump flatted from 3.3.3 to 3.4.2 @dependabot[bot] [`fb0375a`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/fb0375a)
+- Chore(deps-dev): Bump picomatch from 2.3.1 to 2.3.2 @dependabot[bot] [`ae260d0`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/ae260d0)
+- Chore(deps-dev): Bump handlebars from 4.7.7 to 4.7.9 @dependabot[bot] [`ddf05e5`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/ddf05e5)
+- chore(devenv): add devenv.nix environment @MakeShiftArtist [`f1a5e94`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/f1a5e94)
+
+#### General Changes
+
+- get chat responce api @Eva Harris [`ff51151`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/ff51151)
+- json base type for kwargs @Eva Harris [`12aab48`](https://github.com/MakeShiftArtist/ifunny-api-types/commit/12aab48)
+
 
 #### Fixes
 
