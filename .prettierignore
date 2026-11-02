@@ -1,3 +1,6 @@
 # devenv
 devenv.lock
 devenv.yaml
+
+# Markdown
+*.md
