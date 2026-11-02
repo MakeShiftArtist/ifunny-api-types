@@ -6,6 +6,13 @@
 
   languages.javascript = {
     enable = true;
+    nodejs.enable = true;
+    npm.enable = true;
+  };
+
+  languages.typescript = {
+    enable = true;
+    lsp.enable = true;
   };
 
   profiles = {
@@ -20,19 +27,8 @@
     };
   };
 
-  # https://devenv.sh/basics/
-  enterShell = ''
-    git --version # Use packages
-  '';
-
-  # https://devenv.sh/tests/
-  enterTest = ''
-    echo "Running tests"
-    git --version | grep --color=auto "${pkgs.git.version}"
-  '';
-
   # https://devenv.sh/git-hooks/
-  # git-hooks.hooks.shellcheck.enable = true;
+  git-hooks.hooks.prettier.enable = true;
 
   # See full reference at https://devenv.sh/reference/options/
 }
