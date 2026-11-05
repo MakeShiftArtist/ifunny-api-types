@@ -4,3 +4,6 @@ devenv.yaml
 
 # Markdown
 *.md
+
+# Changelog template
+*.hbs
