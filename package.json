@@ -49,11 +49,18 @@
 		"hideEmptyReleases": true,
 		"commitLimit": false,
 		"unreleased": true,
+		"tagPrefix": "v",
 		"replaceText": {
-			"[Ff]eat:": "",
-			"[Ff]ix:": "",
-			"[Bb]reak:": "",
-			"[Dd]oc:": ""
+			"([bB]reaking:\\s*)": "",
+			"([bB]reaking change:\\s*)": "",
+			"(^[fF]eat:\\s*)": "",
+			"(^[fF]ix:\\s*)": "",
+			"(^[cC]hore:\\s*)": "",
+			"(^[dD]ocs?:\\s*)": "",
+			"(^[rR]efactor:\\s*)": "",
+			"(^[tT]est:\\s*)": "",
+			"(^[sS]tyle:\\s*)": "",
+			"(^[pP]erf:\\s*)": ""
 		}
 	}
 }
