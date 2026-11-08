@@ -1,19 +1,24 @@
 {
-	"compileOnSave": true,
-	"compilerOptions": {
-		"strict": true,
-		"target": "ES2020",
-		"module": "CommonJS",
-		"sourceMap": true,
-		"removeComments": false,
-		"outDir": "dist",
-		"rootDir": "./src",
-		"declaration": true,
-		"declarationDir": "types",
-		"declarationMap": true,
-		"noUnusedLocals": true,
-		"noImplicitOverride": true,
-		"forceConsistentCasingInFileNames": true
-	},
-	"include": ["src/**/*.ts"]
+    "compileOnSave": true,
+    "compilerOptions": {
+        "strict": true,
+        "target": "ES2022",
+        "lib": ["ES2022"],
+        "types": ["node"],
+        "module": "nodenext",
+        "moduleResolution": "nodenext",
+        "moduleDetection": "force",
+        "sourceMap": true,
+        "removeComments": false,
+        "rootDir": "./src",
+        "declaration": true,
+        "declarationMap": true,
+        "skipLibCheck": true,
+        "noUnusedLocals": true,
+        "noImplicitOverride": true,
+        "forceConsistentCasingInFileNames": true,
+        "verbatimModuleSyntax": false,
+        "isolatedModules": true
+    },
+    "include": ["src/**/*.ts"]
 }

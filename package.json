@@ -1,66 +1,76 @@
 {
-	"name": "@ifunny/ifunny-api-types",
-	"version": "1.2.2",
-	"description": "iFunny API typings for use in bot library creaion.",
-	"main": "dist/index.js",
-	"types": "types",
-	"scripts": {
-		"test": "tsc --noEmit",
-		"clean": "rm -r -f ./dist && rm -r -f ./types",
-		"build": "tsc",
-		"lint": "npx eslint src",
-		"lint:fix": "npm run lint -- --fix",
-		"fmt": "npx prettier src --check",
-		"fmt:fix": "npm run fmt -- --write",
-		"rebuild": "npm run clean && npm run build",
-		"update": "npx npm-check-updates -u && npm install",
-		"link": "npm run rebuild && npm link",
-		"version": "npm run changelog",
-		"push": "npm run rebuild && git push && npm publish",
-		"changelog": "npx auto-changelog && git add CHANGELOG.md"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/ifunny-co/ifunny-api-types.git"
-	},
-	"keywords": [
-		"ifunny",
-		"types",
-		"typescript"
-	],
-	"author": "MakeShiftArtist <makeshiftdevelopment+npm@proton.me> (https://github.com/makeshiftartist)",
-	"license": "CC0-1.0",
-	"bugs": {
-		"url": "https://github.com/makeshiftartist/ifunny-api-types/issues"
-	},
-	"homepage": "https://github.com/makeshiftartist/ifunny-api-types#readme",
-	"devDependencies": {
-		"@eslint/js": "^9.23.0",
-		"@types/node": "22.13.14",
-		"auto-changelog": "^2.7.0",
-		"eslint": "^9.39.5",
-		"globals": "^16.0.0",
-		"prettier": "^3.5.3",
-		"typescript": "~6.0.3",
-		"typescript-eslint": "^8.28.0"
-	},
-	"auto-changelog": {
-		"template": "changelog-template.hbs",
-		"hideEmptyReleases": true,
-		"commitLimit": false,
-		"unreleased": true,
-		"tagPrefix": "v",
-		"replaceText": {
-			"([bB]reaking:\\s*)": "",
-			"([bB]reaking change:\\s*)": "",
-			"(^[fF]eat:\\s*)": "",
-			"(^[fF]ix:\\s*)": "",
-			"(^[cC]hore:\\s*)": "",
-			"(^[dD]ocs?:\\s*)": "",
-			"(^[rR]efactor:\\s*)": "",
-			"(^[tT]est:\\s*)": "",
-			"(^[sS]tyle:\\s*)": "",
-			"(^[pP]erf:\\s*)": ""
-		}
-	}
+    "name": "@ifunny/ifunny-api-types",
+    "version": "1.2.2",
+    "description": "iFunny API typings for use in bot library creaion.",
+    "type": "commonjs",
+    "main": "./dist/cjs/index.js",
+    "module": "./dist/esm/index.js",
+    "types": "./dist/cjs/index.d.ts",
+    "exports": {
+        ".": {
+            "import": {
+                "types": "./dist/esm/index.d.ts",
+                "default": "./dist/esm/index.js"
+            },
+            "require": {
+                "types": "./dist/cjs/index.d.ts",
+                "default": "./dist/cjs/index.js"
+            }
+        },
+        "./package.json": "./package.json"
+    },
+    "files": [
+        "dist",
+        "src"
+    ],
+    "sideEffects": false,
+    "scripts": {
+        "test": "tsc --noEmit -p tsconfig.cjs.json && tsc --noEmit -p tsconfig.esm.json",
+        "test:exports": "node scripts/check-exports.cjs",
+        "clean": "rm -rf ./dist",
+        "build": "npm run build:cjs && npm run build:esm && node scripts/write-dist-pkg.cjs",
+        "build:cjs": "tsc -p tsconfig.cjs.json",
+        "build:esm": "tsc -p tsconfig.esm.json",
+        "rebuild": "npm run clean && npm run build",
+        "lint": "eslint .",
+        "lint:fix": "npm run lint -- --fix",
+        "fmt": "prettier . --check",
+        "fmt:fix": "prettier . --write",
+        "changelog": "auto-changelog -p && git add CHANGELOG.md",
+        "update": "npx npm-check-updates -u && npm install",
+        "link": "npm run rebuild && npm link",
+        "version": "npm run changelog",
+        "push": "npm run rebuild && git push && npm publish",
+        "prepack": "npm run rebuild",
+        "docs": "typedoc",
+        "docs:clean": "rm -rf ./docs",
+        "docs:publish": "npm run docs:clean && npm run docs && gh-pages -d ./docs/ -t true"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ifunny-co/ifunny-api-types.git"
+    },
+    "keywords": [
+        "ifunny",
+        "types",
+        "typescript"
+    ],
+    "author": "MakeShiftArtist <makeshiftdevelopment+npm@proton.me> (https://github.com/makeshiftartist)",
+    "license": "CC0-1.0",
+    "bugs": {
+        "url": "https://github.com/makeshiftartist/ifunny-api-types/issues"
+    },
+    "homepage": "https://github.com/makeshiftartist/ifunny-api-types#readme",
+    "devDependencies": {
+        "@eslint/js": "^9.39.5",
+        "@eslint/json": "^0.14.0",
+        "@types/node": "25.0.2",
+        "auto-changelog": "^2.7.0",
+        "eslint": "^9.39.5",
+        "globals": "^16.0.0",
+        "jiti": "^2.6.1",
+        "prettier": "^3.9.10",
+        "typescript": "~6.0.3",
+        "typescript-eslint": "^8.28.0"
+    }
 }
