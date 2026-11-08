@@ -1,0 +1,30 @@
+# Local testing
+test.ts
+.env
+
+# VsCode
+.vscode/
+
+# Output
+dist/
+types/
+docs/
+tsconfig.tsbuildinfo
+*.tgz
+
+# Packages
+node_modules/
+
+# Logs
+*.log
+
+# Devenv
+.devenv*
+devenv.local.nix
+devenv.local.yaml
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml

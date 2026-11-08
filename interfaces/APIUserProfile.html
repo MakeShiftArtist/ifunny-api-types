@@ -1,0 +1,315 @@
+<!DOCTYPE html><html class="default" lang="en" data-base="../"><head><meta charset="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>APIUserProfile | @ifunny/ifunny-api-types</title><meta name="description" content="Documentation for @ifunny/ifunny-api-types"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="../assets/style.css"/><link rel="stylesheet" href="../assets/highlight.css"/><script defer src="../assets/main.js"></script><script async src="../assets/icons.js" id="tsd-icons-script"></script><script async src="../assets/search.js" id="tsd-search-script"></script><script async src="../assets/navigation.js" id="tsd-nav-script"></script><script async src="../assets/hierarchy.js" id="tsd-hierarchy-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => window.app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar">
+<div class="tsd-toolbar-contents container"><a href="../index.html" class="title">@ifunny/ifunny-api-types</a>
+<div id="tsd-toolbar-links"></div><button id="tsd-search-trigger" class="tsd-widget" aria-label="Search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-search"></use></svg></button><dialog id="tsd-search" aria-label="Search"><input role="combobox" id="tsd-search-input" aria-controls="tsd-search-results" aria-autocomplete="list" aria-expanded="true" autocapitalize="off" autocomplete="off" placeholder="Search the docs" maxLength="100"/>
+<ul role="listbox" id="tsd-search-results"></ul>
+<div id="tsd-search-status" aria-live="polite" aria-atomic="true">
+<div>Preparing search index...</div></div></dialog><a href="#" class="tsd-widget menu" id="tsd-toolbar-menu-trigger" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-menu"></use></svg></a></div></header>
+<div class="container container-main">
+<div class="col-content">
+<div class="tsd-page-title">
+<ul class="tsd-breadcrumb" aria-label="Breadcrumb">
+<li><a href="" aria-current="page">APIUserProfile</a></li></ul>
+<h1>Interface APIUserProfile</h1></div>
+<section class="tsd-panel tsd-comment">
+<div class="tsd-comment tsd-typography"><p>Represents a user from iFunny</p>
+</div></section>
+<div class="tsd-signature"><span class="tsd-signature-keyword">interface</span> <span class="tsd-kind-interface">APIUserProfile</span> <span class="tsd-signature-symbol">{</span><br/>    <a class="tsd-kind-property" href="#about">about</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#are_you_blocked">are_you_blocked</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#bans">bans</a><span class="tsd-signature-symbol">:</span> <a href="APIBanSmall.html" class="tsd-signature-type tsd-kind-interface">APIBanSmall</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#block_type">block_type</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">&quot;user&quot;</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;installation&quot;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#cover_bg_color">cover_bg_color</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#cover_url">cover_url</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#id">id</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#is_available_for_chat">is_available_for_chat</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#is_banned">is_banned</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#is_blocked">is_blocked</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#is_deleted">is_deleted</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#is_in_subscribers">is_in_subscribers</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#is_in_subscriptions">is_in_subscriptions</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#is_private">is_private</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#is_subscribed_to_updates">is_subscribed_to_updates</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#is_verified">is_verified</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#meme_experience">meme_experience</a><span class="tsd-signature-symbol">:</span> <a href="APIMemeExperience.html" class="tsd-signature-type tsd-kind-interface">APIMemeExperience</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#messaging_privacy_status">messaging_privacy_status</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;closed&quot;</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;public&quot;</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;subscribers&quot;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#messenger_active">messenger_active</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#messenger_token">messenger_token</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#nick">nick</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#nick_color">nick_color</a><span class="tsd-signature-symbol">?:</span><br/>        <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;55FF00&quot;</span><br/>        <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;660000&quot;</span><br/>        <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;e0b400&quot;</span><br/>        <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;a078f0&quot;</span><br/>        <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;ff3e52&quot;</span><br/>        <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;ffffff&quot;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#num">num</a><span class="tsd-signature-symbol">:</span> <a href="APIUserProfileNums.html" class="tsd-signature-type tsd-kind-interface">APIUserProfileNums</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#original_nick">original_nick</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#photo">photo</a><span class="tsd-signature-symbol">?:</span> <a href="APIProfilePhoto.html" class="tsd-signature-type tsd-kind-interface">APIProfilePhoto</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#rating">rating</a><span class="tsd-signature-symbol">:</span> <a href="APIUserRating.html" class="tsd-signature-type tsd-kind-interface">APIUserRating</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#social">social</a><span class="tsd-signature-symbol">?:</span> <a href="APIUserAllSocials.html" class="tsd-signature-type tsd-kind-interface">APIUserAllSocials</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#web_url">web_url</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/><span class="tsd-signature-symbol">}</span></div>
+<section class="tsd-panel tsd-hierarchy" data-refl="1611">
+<h4>Hierarchy (<a href="../hierarchy.html#APIUserProfile">View Summary</a>)</h4>
+<ul class="tsd-hierarchy">
+<li class="tsd-hierarchy-item"><a href="APIBasePayload.html" class="tsd-signature-type tsd-kind-interface">APIBasePayload</a>
+<ul class="tsd-hierarchy">
+<li class="tsd-hierarchy-item"><span class="tsd-hierarchy-target">APIUserProfile</span></li></ul></li></ul></section><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L57">payloads/user.ts:57</a></li></ul></aside>
+<section class="tsd-panel-group tsd-index-group">
+<section class="tsd-panel tsd-index-panel">
+<details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
+<h5 class="tsd-index-heading uppercase">Index</h5></summary>
+<div class="tsd-accordion-details">
+<section class="tsd-index-section">
+<h3 class="tsd-index-heading tsd-anchor-link" id="properties">Properties<a href="#properties" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-index-list"><a href="#about" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>about</span></a>
+<a href="#are_you_blocked" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>are_<wbr/>you_<wbr/>blocked</span></a>
+<a href="#bans" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>bans</span></a>
+<a href="#block_type" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>block_<wbr/>type?</span></a>
+<a href="#cover_bg_color" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>cover_<wbr/>bg_<wbr/>color?</span></a>
+<a href="#cover_url" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>cover_<wbr/>url?</span></a>
+<a href="#id" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>id</span></a>
+<a href="#is_available_for_chat" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>available_<wbr/>for_<wbr/>chat</span></a>
+<a href="#is_banned" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>banned</span></a>
+<a href="#is_blocked" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>blocked</span></a>
+<a href="#is_deleted" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>deleted</span></a>
+<a href="#is_in_subscribers" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>in_<wbr/>subscribers</span></a>
+<a href="#is_in_subscriptions" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>in_<wbr/>subscriptions</span></a>
+<a href="#is_private" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>private</span></a>
+<a href="#is_subscribed_to_updates" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>subscribed_<wbr/>to_<wbr/>updates</span></a>
+<a href="#is_verified" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>verified</span></a>
+<a href="#meme_experience" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>meme_<wbr/>experience</span></a>
+<a href="#messaging_privacy_status" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>messaging_<wbr/>privacy_<wbr/>status</span></a>
+<a href="#messenger_active" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>messenger_<wbr/>active</span></a>
+<a href="#messenger_token" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>messenger_<wbr/>token</span></a>
+<a href="#nick" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>nick</span></a>
+<a href="#nick_color" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>nick_<wbr/>color?</span></a>
+<a href="#num" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>num</span></a>
+<a href="#original_nick" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>original_<wbr/>nick</span></a>
+<a href="#photo" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>photo?</span></a>
+<a href="#rating" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>rating</span></a>
+<a href="#social" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>social?</span></a>
+<a href="#web_url" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>web_<wbr/>url</span></a>
+</div></section></div></details></section></section>
+<details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
+<h2 class="tsd-anchor-link" id="properties-1">Properties<a href="#properties-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
+<section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="about"><span>about</span><a href="#about" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">about</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>User's about bio<br>
+? Can be an empty string</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L62">payloads/user.ts:62</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="are_you_blocked"><span>are_<wbr/>you_<wbr/>blocked</span><a href="#are_you_blocked" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">are_you_blocked</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+<div class="tsd-comment tsd-typography"><p>Did the user block the client</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L66">payloads/user.ts:66</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="bans"><span>bans</span><a href="#bans" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">bans</span><span class="tsd-signature-symbol">:</span> <a href="APIBanSmall.html" class="tsd-signature-type tsd-kind-interface">APIBanSmall</a><span class="tsd-signature-symbol">[]</span></div>
+<div class="tsd-comment tsd-typography"><p>Array of APIBan objects.</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L70">payloads/user.ts:70</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="block_type"><code class="tsd-tag">Optional</code><span>block_<wbr/>type</span><a href="#block_type" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">block_type</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">&quot;user&quot;</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;installation&quot;</span></div>
+<div class="tsd-comment tsd-typography"><p>Block type if the user is blocked</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L74">payloads/user.ts:74</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="cover_bg_color"><code class="tsd-tag">Optional</code><span>cover_<wbr/>bg_<wbr/>color</span><a href="#cover_bg_color" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">cover_bg_color</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>User's cover image background color</p>
+</div>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-example">
+<h4 class="tsd-anchor-link" id="example">Example<a href="#example" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><pre><code class="ts"><span class="hl-3">&#39;55ff00&#39;</span>
+</code><button type="button">Copy</button></pre>
+
+</div></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L80">payloads/user.ts:80</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="cover_url"><code class="tsd-tag">Optional</code><span>cover_<wbr/>url</span><a href="#cover_url" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">cover_url</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>User's cover image url</p>
+</div>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-example">
+<h4 class="tsd-anchor-link" id="example-1">Example<a href="#example-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><pre><code class="ts"><span class="hl-3">`https://img.ifunny.co/user_covers/</span><span class="hl-4">${</span><span class="hl-2">string</span><span class="hl-4">}</span><span class="hl-3">.webp`</span>
+</code><button type="button">Copy</button></pre>
+
+</div></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L86">payloads/user.ts:86</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="id"><span>id</span><a href="#id" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">id</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>User's unique id<br>
+? Never changes</p>
+</div><aside class="tsd-sources">
+<p>Overrides <a href="APIBasePayload.html">APIBasePayload</a>.<a href="APIBasePayload.html#id">id</a></p>
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L91">payloads/user.ts:91</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="is_available_for_chat"><span>is_<wbr/>available_<wbr/>for_<wbr/>chat</span><a href="#is_available_for_chat" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">is_available_for_chat</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+<div class="tsd-comment tsd-typography"><p>Can the Client chat with the user</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L95">payloads/user.ts:95</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="is_banned"><span>is_<wbr/>banned</span><a href="#is_banned" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">is_banned</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+<div class="tsd-comment tsd-typography"><p>Is the user banned<br>
+! UNSAFE TO CHECK FOR ACTIVE BANS</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L100">payloads/user.ts:100</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="is_blocked"><span>is_<wbr/>blocked</span><a href="#is_blocked" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">is_blocked</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+<div class="tsd-comment tsd-typography"><p>Is the user blocked by the client</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L104">payloads/user.ts:104</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="is_deleted"><span>is_<wbr/>deleted</span><a href="#is_deleted" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">is_deleted</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+<div class="tsd-comment tsd-typography"><p>Is the user deleted from iFunny's servers<br>
+? if true, many properties will be undefined</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L109">payloads/user.ts:109</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="is_in_subscribers"><span>is_<wbr/>in_<wbr/>subscribers</span><a href="#is_in_subscribers" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">is_in_subscribers</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+<div class="tsd-comment tsd-typography"><p>Is the User subscribed to the Client</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L113">payloads/user.ts:113</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="is_in_subscriptions"><span>is_<wbr/>in_<wbr/>subscriptions</span><a href="#is_in_subscriptions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">is_in_subscriptions</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+<div class="tsd-comment tsd-typography"><p>Is the Client subscribed to the user</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L117">payloads/user.ts:117</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="is_private"><span>is_<wbr/>private</span><a href="#is_private" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">is_private</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+<div class="tsd-comment tsd-typography"><p>Is the  user's account private</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L121">payloads/user.ts:121</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="is_subscribed_to_updates"><span>is_<wbr/>subscribed_<wbr/>to_<wbr/>updates</span><a href="#is_subscribed_to_updates" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">is_subscribed_to_updates</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+<div class="tsd-comment tsd-typography"><p>Is the client subscribed to the user's notifications</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L125">payloads/user.ts:125</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="is_verified"><span>is_<wbr/>verified</span><a href="#is_verified" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">is_verified</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+<div class="tsd-comment tsd-typography"><p>Is the user verified on iFunny</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L129">payloads/user.ts:129</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="meme_experience"><span>meme_<wbr/>experience</span><a href="#meme_experience" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">meme_experience</span><span class="tsd-signature-symbol">:</span> <a href="APIMemeExperience.html" class="tsd-signature-type tsd-kind-interface">APIMemeExperience</a></div>
+<div class="tsd-comment tsd-typography"><p>The user's meme experience</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L133">payloads/user.ts:133</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="messaging_privacy_status"><span>messaging_<wbr/>privacy_<wbr/>status</span><a href="#messaging_privacy_status" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">messaging_privacy_status</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;closed&quot;</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;public&quot;</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;subscribers&quot;</span></div>
+<div class="tsd-comment tsd-typography"><p>The Chat privacy status of the user</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L137">payloads/user.ts:137</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="messenger_active"><span>messenger_<wbr/>active</span><a href="#messenger_active" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">messenger_active</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+<div class="tsd-comment tsd-typography"><p>Does the user have access to chats</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L141">payloads/user.ts:141</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="messenger_token"><span>messenger_<wbr/>token</span><a href="#messenger_token" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">messenger_token</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Seems to always be <code>&quot;1010101010101010101010101010101010101010&quot;</code></p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L145">payloads/user.ts:145</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="nick"><span>nick</span><a href="#nick" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">nick</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>User's unique username<br>
+! UNSAFE FOR USER CACHING.</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L150">payloads/user.ts:150</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="nick_color"><code class="tsd-tag">Optional</code><span>nick_<wbr/>color</span><a href="#nick_color" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">nick_color</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">&quot;55FF00&quot;</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;660000&quot;</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;e0b400&quot;</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;a078f0&quot;</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;ff3e52&quot;</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;ffffff&quot;</span></div>
+<div class="tsd-comment tsd-typography"><p>User's nick color (Default: 55FF00)</p>
+</div>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-example">
+<h4 class="tsd-anchor-link" id="example-2">Example<a href="#example-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><pre><code class="ts"><span class="hl-3">&#39;55ff00&#39;</span>
+</code><button type="button">Copy</button></pre>
+
+</div></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L156">payloads/user.ts:156</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="num"><span>num</span><a href="#num" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">num</span><span class="tsd-signature-symbol">:</span> <a href="APIUserProfileNums.html" class="tsd-signature-type tsd-kind-interface">APIUserProfileNums</a></div>
+<div class="tsd-comment tsd-typography"><p>User's profile stats</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L160">payloads/user.ts:160</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="original_nick"><span>original_<wbr/>nick</span><a href="#original_nick" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">original_nick</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>Original nick of the user<br>
+? iFunny censors some usernames similar to the comment filter</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L165">payloads/user.ts:165</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="photo"><code class="tsd-tag">Optional</code><span>photo</span><a href="#photo" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">photo</span><span class="tsd-signature-symbol">?:</span> <a href="APIProfilePhoto.html" class="tsd-signature-type tsd-kind-interface">APIProfilePhoto</a></div>
+<div class="tsd-comment tsd-typography"><p>The user's profile photo</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L169">payloads/user.ts:169</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="rating"><span>rating</span><a href="#rating" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">rating</span><span class="tsd-signature-symbol">:</span> <a href="APIUserRating.html" class="tsd-signature-type tsd-kind-interface">APIUserRating</a></div>
+<div class="tsd-comment tsd-typography"><p>The user's rating<br>
+! Deprecated by iFunny</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L174">payloads/user.ts:174</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="social"><code class="tsd-tag">Optional</code><span>social</span><a href="#social" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">social</span><span class="tsd-signature-symbol">?:</span> <a href="APIUserAllSocials.html" class="tsd-signature-type tsd-kind-interface">APIUserAllSocials</a></div>
+<div class="tsd-comment tsd-typography"><p>The User's linked social accounts<br>
+Twitter, Google, Facebook</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L179">payloads/user.ts:179</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="web_url"><span>web_<wbr/>url</span><a href="#web_url" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">web_url</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+<div class="tsd-comment tsd-typography"><p>User's inapp share url</p>
+</div>
+<div class="tsd-comment tsd-typography">
+<div class="tsd-tag-example">
+<h4 class="tsd-anchor-link" id="example-3">Example<a href="#example-3" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><pre><code class="ts"><span class="hl-3">`https://ifunny.co/user/:nick`</span>
+</code><button type="button">Copy</button></pre>
+
+</div></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/MakeShiftArtist/ifunny-api-types/blob/2f9558fda29bf8bb5f4af84075f3ac01792de315/src/payloads/user.ts#L185">payloads/user.ts:185</a></li></ul></aside></section></section></details></div>
+<div class="col-sidebar">
+<div class="page-menu">
+<div class="tsd-navigation settings">
+<details class="tsd-accordion"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
+<h3>Settings</h3></summary>
+<div class="tsd-accordion-details">
+<div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span>
+<ul id="tsd-filter-options">
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li>
+<li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-external" name="external"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>External</span></label></li></ul></div>
+<div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div>
+<details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
+<h3>On This Page</h3></summary>
+<div class="tsd-accordion-details">
+<details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Properties</summary>
+<div><a href="#about"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>about</span></a><a href="#are_you_blocked"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>are_<wbr/>you_<wbr/>blocked</span></a><a href="#bans"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>bans</span></a><a href="#block_type"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>block_<wbr/>type</span></a><a href="#cover_bg_color"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>cover_<wbr/>bg_<wbr/>color</span></a><a href="#cover_url"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>cover_<wbr/>url</span></a><a href="#id"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>id</span></a><a href="#is_available_for_chat"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>available_<wbr/>for_<wbr/>chat</span></a><a href="#is_banned"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>banned</span></a><a href="#is_blocked"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>blocked</span></a><a href="#is_deleted"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>deleted</span></a><a href="#is_in_subscribers"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>in_<wbr/>subscribers</span></a><a href="#is_in_subscriptions"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>in_<wbr/>subscriptions</span></a><a href="#is_private"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>private</span></a><a href="#is_subscribed_to_updates"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>subscribed_<wbr/>to_<wbr/>updates</span></a><a href="#is_verified"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>is_<wbr/>verified</span></a><a href="#meme_experience"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>meme_<wbr/>experience</span></a><a href="#messaging_privacy_status"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>messaging_<wbr/>privacy_<wbr/>status</span></a><a href="#messenger_active"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>messenger_<wbr/>active</span></a><a href="#messenger_token"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>messenger_<wbr/>token</span></a><a href="#nick"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>nick</span></a><a href="#nick_color"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>nick_<wbr/>color</span></a><a href="#num"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>num</span></a><a href="#original_nick"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>original_<wbr/>nick</span></a><a href="#photo"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>photo</span></a><a href="#rating"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>rating</span></a><a href="#social"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>social</span></a><a href="#web_url"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>web_<wbr/>url</span></a></div></details></div></details></div>
+<div class="site-menu">
+<nav class="tsd-navigation"><a href="../modules.html">@ifunny/ifunny-api-types</a>
+<ul class="tsd-small-nested-navigation" id="tsd-nav-container">
+<li>Loading...</li></ul></nav></div></div></div><footer>
+<p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer>
+<div class="overlay"></div></body></html>
