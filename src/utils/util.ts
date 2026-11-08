@@ -2,14 +2,14 @@
  * Pixel size of an image or video
  */
 export interface Size {
-	/**
-	 * Width (in pixels)
-	 */
-	w: number;
-	/**
-	 * Height (in pixels)
-	 */
-	h: number;
+    /**
+     * Width (in pixels)
+     */
+    w: number;
+    /**
+     * Height (in pixels)
+     */
+    h: number;
 }
 
 /**
@@ -33,10 +33,10 @@ export type HexCode = string;
  * }
  */
 export type If<T extends boolean, A, B = null> = T extends true
-	? A
-	: T extends false
-	? B
-	: A | B;
+    ? A
+    : T extends false
+      ? B
+      : A | B;
 
 /**
  * UNIX Epoch in seconds
@@ -85,6 +85,6 @@ export type JSONValue = Primitive | JSONObject | JSONValue[];
  * Represents a raw JSON Object
  */
 export interface JSONObject {
-	[key: string]: JSONValue;
-	[index: number]: never;
+    [key: string]: JSONValue;
+    [index: number]: never;
 }

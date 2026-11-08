@@ -1,5 +1,5 @@
 export interface APIBasePayload {
-	id: string;
+    id: string;
 }
 
 export default APIBasePayload;

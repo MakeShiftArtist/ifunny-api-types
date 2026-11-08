@@ -1,13 +1,13 @@
-import RESTAPIError from "./error_base";
-import RESTAPIErrorBadRequest from "./bad_request";
-import RESTAPIErrorCaptchaRequired from "./captcha_required";
-import RESTAPIErrorEmailExists from "./email_exists";
-import RESTAPIErrorInvalidEmail from "./invalid_email";
-import RESTAPIErrorInvalidGrant from "./invalid_grant";
-import RESTAPIErrorNotFound from "./not_found";
-import RESTAPIErrorPermissionDenied from "./permission_denied";
-import RESTAPIErrorUnauthorized from "./unauthorized";
-import RESTAPIErrorInvalidClient from "./invalid_client";
+import RESTAPIError from "./error_base.js";
+import RESTAPIErrorBadRequest from "./bad_request.js";
+import RESTAPIErrorCaptchaRequired from "./captcha_required.js";
+import RESTAPIErrorEmailExists from "./email_exists.js";
+import RESTAPIErrorInvalidEmail from "./invalid_email.js";
+import RESTAPIErrorInvalidGrant from "./invalid_grant.js";
+import RESTAPIErrorNotFound from "./not_found.js";
+import RESTAPIErrorPermissionDenied from "./permission_denied.js";
+import RESTAPIErrorUnauthorized from "./unauthorized.js";
+import RESTAPIErrorInvalidClient from "./invalid_client.js";
 
 /**
  * Returns when the request throws an error.\
@@ -23,15 +23,15 @@ import RESTAPIErrorInvalidClient from "./invalid_client";
  * }
  */
 export type RESTAPIErrorResponse =
-	| RESTAPIErrorInvalidClient
-	| RESTAPIErrorBadRequest
-	| RESTAPIErrorCaptchaRequired
-	| RESTAPIErrorEmailExists
-	| RESTAPIErrorInvalidEmail
-	| RESTAPIErrorInvalidGrant
-	| RESTAPIErrorNotFound
-	| RESTAPIErrorPermissionDenied
-	| RESTAPIErrorUnauthorized;
+    | RESTAPIErrorInvalidClient
+    | RESTAPIErrorBadRequest
+    | RESTAPIErrorCaptchaRequired
+    | RESTAPIErrorEmailExists
+    | RESTAPIErrorInvalidEmail
+    | RESTAPIErrorInvalidGrant
+    | RESTAPIErrorNotFound
+    | RESTAPIErrorPermissionDenied
+    | RESTAPIErrorUnauthorized;
 
 /**
  * Use this if you don't know the error being thrown or don't want full intellisense support
