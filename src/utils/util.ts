@@ -65,7 +65,7 @@ export type EpochMs = number;
 export type ValueOf<T, K extends keyof T = keyof T> = T[K];
 
 /**
- * Like {@link Pick}, but each key is made required
+ * Like Pick, but each key is made required
  * @example
  * interface Foo {
  * 	bar?: string

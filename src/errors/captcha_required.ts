@@ -30,7 +30,7 @@ export type RESTAPIErrorCaptchaRequiredMessage = `${CAPTCHA_REQUIRED}`;
 /**
  * Known captcha types
  */
-enum CAPTCHA_TYPE {
+export enum CAPTCHA_TYPE {
     FUN_CAPTCHA = "fun_captcha",
     RECAPTCHA = "recaptcha",
 }

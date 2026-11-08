@@ -78,7 +78,7 @@ export interface APIClientUser extends Omit<APIUserProfile, "rating"> {
     email: string;
 }
 
-interface APIClientPhoneData {
+export interface APIClientPhoneData {
     /**
      * Country code of the phone number
      */
@@ -100,12 +100,12 @@ export enum API_SEX {
 
 /**
  * Possible sex types for the Client
- * @alias APIClientUserGender
+ * @see {@link APIClientUserGender}
  */
 export type APIClientUserSex = `${API_SEX}`;
 
 /**
  * Possible genders for the Client
- * @alias APIClientUserSex
+ * @see {@link APIClientUserSex}
  */
 export type APIClientUserGender = APIClientUserSex;

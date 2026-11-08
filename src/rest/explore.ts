@@ -41,7 +41,7 @@ export type APIExploreTabName = keyof typeof EXPLORE_TAB_IDS;
 
 export type APIExploreTabID = ValueOf<typeof EXPLORE_TAB_IDS>;
 
-interface APIExploreCompilationSet {
+export interface APIExploreCompilationSet {
     layout: string;
     value: APIExploreCompilation;
 }
@@ -78,7 +78,7 @@ export enum EXPLORE_LAYOUTS {
 
 export type APIExploreTabLayout = `${EXPLORE_LAYOUTS}`;
 
-interface APIExploreCompilation {
+export interface APIExploreCompilation {
     id: APIExploreCompilationID;
     context: APIExploreContext;
     type: string;
@@ -86,7 +86,7 @@ interface APIExploreCompilation {
     share_url: string;
 }
 
-interface APIExploreContext {
+export interface APIExploreContext {
     items: APIContent[];
     paging: RESTAPIPaging;
 }
